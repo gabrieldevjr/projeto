@@ -1,0 +1,116 @@
+ @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    list-style: none;
+    text-decoration: none;
+ }
+ :root{
+    --red:#d63a25; 
+    ---white:#fff; 
+    ---dark: #1e1c2a; 
+    ---roxo: #3d142d;
+    ---yellow: #f0ed3a; 
+ }
+ body{
+    color: var(---dark);
+    background: var(--red);
+ }
+ .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--red);
+    transition: all 0.5s;
+    position: fixed;
+ }
+.navigation .logo{
+    color: var(---yellow);
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-shadow: 0 0.2rem 0.4rem #020201;
+    
+}
+.logo span{
+    color: var(---yellow);
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: var(---yellow);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: var(--red);
+    text-shadow:0 0.2rem 0.8rem #080808;
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(---white);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1)
+.menu .bar:nth-child(3){
+    background: var(--red);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.home-text{
+    max-width: 37rem;
+}
+.home-text .text-4{
+    font-size: 1.5rem;
+    color: #f0ed3a;
+    margin-bottom: 1rem;
+}
+.home-text .text-1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+.home-text p{
+    margin-bottom: 4rem;
+}
+.home-btn{
+    padding: 15px 45px;
+    background: var(---white);
+    color: var(---yellow);
+    text-shadow: var(---dark) 0 0.1rem 0.2rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: var(---dark);
+}
+.home-img img{
+    width: 100%;
+}
