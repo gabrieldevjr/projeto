@@ -118,7 +118,7 @@
 
 .home-btn{
     padding: 15px 45px;
-    background: var(---white);
+    background: blue;
     color: var(---yellow);
     text-shadow: var(---dark) 0 0.1rem 0.2rem;
     border-radius: 10px;
@@ -130,20 +130,96 @@
     background: var(---dark);
 }
 
-.enviar-btn{
-    padding: 5px 45px;
-    background: var(---dark);
-    color: var(---yellow);
+.home-img img{
+    width: 100%;
+}
+
+/*TELA DE CONTATO*/
+
+.area-de-contato {
+    text-shadow: var(---white);
+    font-size: 24px;
+    padding: 5px 50px;
     text-shadow: var(---white) 0 0.1rem 0.2rem;
+    border-radius: 15px;
+    background: var(---white);
+    text-align: center;
+}
+
+h3 {
+    padding: 15px 5px;
+}
+
+.nome_form{
     border-radius: 10px;
-    font-weight: 500;
+    border-style: groove;
+    padding: 5px 5px;
+    text-align: center;
     transition: all 0.5s;
 }
 
-.enviar-btn:hover{
-    background: var(---white);
+.nome_form:hover, .nome_form:focus{
+    padding: 5px 50px;
 }
 
-.home-img img{
-    width: 100%;
+.email_form {
+    border-radius: 10px;
+    border-style: groove;
+    padding: 5px 5px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.email_form:hover, .email_form:focus{
+    padding: 5px 40px;
+}
+
+.telefone_form {
+    border-radius: 10px;
+    border-style: groove;
+    padding: 5px 5px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.telefone_form:hover, .telefone_form:focus{
+    padding: 5px 20px;
+}
+
+.text_nome_form{
+    padding: 5px 5px;
+    color: white;
+}
+
+.text_email_form{
+    padding: 5px 5px;
+    color: white;    
+}
+
+.text_telefone_form{
+    padding: 5px 5px;
+    color: white;
+
+}
+
+.enviar-btn{
+    padding: 3px 30px;
+    background: var(---dark);
+    color: var(---yellow);
+    text-shadow: var(---white) 0 0.1rem 0.2rem;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: white;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.enviar-btn:hover, .enviar-btn:focus{
+    background: blue;
+    color: var(---white);
+    border-radius: 20px;
+    border-style: inset;
+    border-color: white;
+    padding: 10px 50px;
+    font-size: 18px;
 }
