@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
  }
+
  :root{
     --red:#d63a25; 
     ---white:#fff; 
@@ -14,10 +15,12 @@
     ---roxo: #3d142d;
     ---yellow: #f0ed3a; 
  }
+
  body{
     color: var(---dark);
     background: var(--red);
  }
+
  .navigation{
     display: flex;
     align-items: center;
@@ -29,39 +32,46 @@
     transition: all 0.5s;
     position: fixed;
  }
+
 .navigation .logo{
     color: var(---yellow);
     font-size: 1.7rem;
     font-weight: 600;
-    text-shadow: 0 0.2rem 0.4rem #020201;
-    
+    text-shadow: 0 0.2rem 0.4rem #020201;   
 }
+
 .logo span{
     color: var(---yellow);
 }
+
 .navigation ul{
     display: flex;
     align-items: center;
     gap: 5rem;
 }
+
 .navigation ul li a{
     color: var(---yellow);
     font-size: 17px;
     font-weight: 500;
     transition: all 0.5s;
 }
+
 .navigation ul li a:hover{
     color: var(--red);
     text-shadow:0 0.2rem 0.8rem #080808;
 }
+
 .navigation i{
     cursor: pointer;
     font-size: 1.5rem;
 }
+
 .menu{
     cursor: pointer;
     display: none;
 }
+
 .menu .bar{
     display: block;
     width: 28px;
@@ -71,10 +81,12 @@
     margin: 5px auto;
     transition: all 0.3s;
 }
+
 .menu .bar:nth-child(1)
 .menu .bar:nth-child(3){
     background: var(--red);
 }
+
 .home{
     width: 100%;
     height: 100vh;
@@ -83,22 +95,27 @@
     justify-content: space-between;
     padding: 0px 10%;
 }
+
 .home-text{
     max-width: 37rem;
 }
+
 .home-text .text-4{
     font-size: 1.5rem;
     color: #f0ed3a;
     margin-bottom: 1rem;
 }
+
 .home-text .text-1{
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 4rem;
 }
+
 .home-text p{
     margin-bottom: 4rem;
 }
+
 .home-btn{
     padding: 15px 45px;
     background: var(---white);
@@ -108,9 +125,25 @@
     font-weight: 500;
     transition: all 0.5s;
 }
+
 .home-btn:hover{
     background: var(---dark);
 }
+
+.enviar-btn{
+    padding: 5px 45px;
+    background: var(---dark);
+    color: var(---yellow);
+    text-shadow: var(---white) 0 0.1rem 0.2rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.enviar-btn:hover{
+    background: var(---white);
+}
+
 .home-img img{
     width: 100%;
 }
