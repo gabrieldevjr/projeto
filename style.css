@@ -134,12 +134,19 @@
     width: 100%;
 }
 
-/*TELA DE CONTATO*/
+/*TELA DE CONTATO
+------------------------------------------*/
+.home-text_contato{
+    max-width: 350rem;
+    display: flex;
+}
+
 .form_contato{
     text-align: center;
-    margin-bottom: -60px;
+    margin-bottom: -80px;
     border-radius: 10px;
     border-color: white;
+    border-style: double;
     border-width: medium;
     transition: all 0.5s;
 }
@@ -147,16 +154,17 @@
 .form_contato:hover{
     border-radius: 10px;
     border-color: yellow;
-
 }
 
 .area-de-contato {
-    text-shadow: var(---white);
+    display: flex;
+    background: var(---dark);
+    color: yellow;
     font-size: 22px;
     padding: 5px 50px;
     text-shadow: var(---white) 0 0.1rem 0.2rem;
     border-radius: 15px;
-    background: var(---white);
+    
     text-align: center;
     animation-direction: alternate;
 }
@@ -295,7 +303,7 @@ h3 {
     border-style: inset;
 }
 
-.enviar-btn{
+.btn_enviar{
     padding: 5px 50px;
     background: var(---dark);
     color: var(---white);
@@ -305,18 +313,22 @@ h3 {
     border-color: white;
     font-size: 18px;
     transition: all 0.5s;
-    display: block;
-    text-align: center;
 
 }
 
-.enviar-btn:hover, .enviar-btn:focus{
+.btn_enviar:hover, .enviar-btn:focus{
     background: yellow;
     color: var(---black);
-    border-radius: 20px;
     border-style: inset;
     border-color: black;
-    padding: 10px 50px;
-    font-size: 18px;
     text-align: center;
+}
+
+.home-img_contatos{
+    margin-left: 140px;
+    display: flex;
+}
+
+.home-img_contatos img{
+    width: 110%;
 }
