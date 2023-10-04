@@ -4,25 +4,27 @@ function enviar() {
     const inputNome = document.querySelector('.nome_form');
     var nome = inputNome.value
     nome.trim()
+    nome = nome.toUpperCase()
     const inputEmail = document.querySelector('.email_form');
     var email = inputEmail.value
     email.trim()
+    email = email.toLowerCase()
     const inputTelefone = document.querySelector('.telefone_form');
     var telefone = inputTelefone.value
     telefone.trim()
     const inputProduto = document.querySelector('.produto_form');
     var produto = inputProduto.value
     produto.trim()
+    produto = produto.toLowerCase()
     const selectMarca = document.querySelector('.select_marca');
     var marca = selectMarca.value
     const areaMensagem = document.querySelector('.mensagem_form');
     var mensagem = areaMensagem.value
     mensagem.trim()
-    var nome_valid = nome.split('')
+    var nome_caracter = nome.split('')
     var nomeInvalid = false
-    var reg = ["@","!","#","$","%","^","&","*","(","-","_",")","/","\\",".","<",">","=","?","[","]","{","}","+",":",";","|","¨"]
-    
-    nome_valid.forEach((caracter) => {
+    var reg = ["@","!","#","$","%","^","&","*","(","-","_",")","/","\\",".","<",">","=","?","[","]","{","}","+",":",";","|","¨",",",'"',"'","ª","º","§","¹","²","³","£","¬","`","´","~"]
+    nome_caracter.forEach((caracter) => {
         reg.forEach((regra) => {
             if ((isNaN(caracter) == false && caracter != " ") || caracter.includes(regra)) {
                 nomeInvalid = true
@@ -80,7 +82,7 @@ function enviar() {
     }
 
     if (nomeValid && emailValid && numeroValid && produtoValid && marca != "" && mensagemValid) {
-        alert(`Ok ${nome}! Sua mensagem foi enviada com sucesso!\nConte conosco sempre que precisar :)`)
+        alert(`Obrigado ${nome} por entrar em contato.\nSua mensagem foi enviada com sucesso!\nConte conosco sempre que precisar :)`)
         inputNome.value = '';
         inputEmail.value = '';
         inputTelefone.value = '';
@@ -88,5 +90,7 @@ function enviar() {
         selectMarca.value = '';
         areaMensagem.value = '';
         window.location.href = "index.html";
+
     }
+
 }
